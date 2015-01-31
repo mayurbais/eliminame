@@ -1,0 +1,12 @@
+<h1>Home</h1>
+<h1>Greeting</h1>
+<div  ng-show="authenticated">
+<p>You're logged in!!</p>
+<p>The ID is {{greeting.id}}</p>
+<p>The content is {{greeting.content}}</p>
+<a href="" ng-click="logout()">Logout!</a>
+</div>
+
+<div  ng-show="!authenticated">
+	<p><a href="#/login">Login</a></a> to see your greeting</p>
+</div>
